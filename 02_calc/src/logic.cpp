@@ -22,9 +22,20 @@ namespace calc
         {
             output_ss << a << op << b << "=" << a + b;
         }
-        else
+
+        if (op == '-')
         {
-            output_ss << a << op << b << "=" << a + b;
+            output_ss << a << op << b << "=" << a - b;
+        }
+
+        if (op == '*')
+        {
+            output_ss << a << op << b << "=" << a * b;
+        }
+        
+        if (op == '/')
+        {
+            output_ss << a << op << b << "=" << a / b;
         }
         return output_ss.str();
     }
